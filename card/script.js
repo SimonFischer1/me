@@ -37,7 +37,7 @@ const profile = {
    FESTE URL DER VISITENKARTE
    --------------------------------------------------------- */
 
-const profileURL = "http://card.navtool.de/";
+const profileURL = "https://me.navtool.de/card/";
 
 
 /*
@@ -50,7 +50,7 @@ const profileURL = "http://card.navtool.de/";
 */
 
 const contactURL =
-    "http://card.navtool.de/?save=contact";
+    "https://me.navtool.de/card/";
 
 
 /* ---------------------------------------------------------
