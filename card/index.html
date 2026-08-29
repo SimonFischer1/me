@@ -1,75 +1,235 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simon Fischer · Digitale Visitenkarte</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#030707">
+    <meta name="description" content="Digitale Visitenkarte von Simon Fischer">
+
+    <title>Simon Fischer · Digitale Visitenkarte</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <div class="page">
-<header class="card-header">
-<div class="profile-image">
-<img src="profile.jpg" alt="Simon Fischer">
-</div>
-<div class="identity">
-<div class="eyebrow">DIGITAL BUSINESS CARD</div>
-<h1>Simon Fischer</h1>
-<p>Student · Digital Projects · Web</p>
-</div>
-<button class="qr-button" onclick="openQR()">QR</button>
-</header>
 
-<section class="contact">
-<div class="info-box"><span>PRIVATE E-MAIL</span><strong>DEINE.PRIVATE.MAIL@BEISPIEL.DE</strong></div>
-<div class="info-box"><span>STUDENTISCHE E-MAIL</span><strong>DEINE.STUDENTISCHE.MAIL@BEISPIEL.DE</strong></div>
-<div class="info-box"><span>TELEFON</span><strong>+49 123 4567890</strong></div>
-<div class="info-box"><span>ADRESSE</span><strong>DEINE STRASSE 1, 00000 ORT</strong></div>
-</section>
+    <!-- HEADER -->
+    <header class="card-header">
 
-<section class="actions">
-<button class="primary-button" onclick="saveContact()">+ Kontakt speichern</button>
-<button class="secondary-button" onclick="shareProfile()">Profil teilen</button>
-</section>
+        <div class="profile-image">
+            <img src="Profil.png" alt="Simon Fischer">
+        </div>
 
-<section class="lower-grid">
-<div class="panel">
-<div class="section-title">QUALIFIKATIONEN</div>
-<div class="qualification">DEINE QUALIFIKATION</div>
-<div class="qualification">DEIN STUDIUM / ABSCHLUSS</div>
-<div class="qualification">WEITERE QUALIFIKATION</div>
-</div>
-<div class="panel">
-<div class="section-title">SOCIAL MEDIA</div>
-<div class="socials">
-<a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
-<a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-<a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-</div>
-</div>
-</section>
+        <div class="identity">
+            <div class="eyebrow">DIGITAL BUSINESS CARD</div>
 
-<section class="share-box">
-<div>
-<div class="section-title">PROFIL TEILEN</div>
-<h2>Scannen & öffnen.</h2>
-<p>QR-Code scannen und Profil direkt aufrufen.</p>
-</div>
-<div id="qrcode"></div>
-</section>
+            <h1>Simon Fischer</h1>
 
-<footer>Made with ❤️ by <strong>Simon Fischer</strong></footer>
+            <p>Student · Digital Projects · Web</p>
+        </div>
+
+        <button
+            class="qr-button"
+            onclick="openQR()"
+            aria-label="QR-Code öffnen"
+        >
+            QR
+        </button>
+
+    </header>
+
+
+    <!-- KONTAKT -->
+    <section class="contact">
+
+        <div class="info-box">
+            <span>PRIVATE E-MAIL</span>
+            <strong>
+                DEINE.PRIVATE.MAIL@BEISPIEL.DE
+            </strong>
+        </div>
+
+        <div class="info-box">
+            <span>STUDENTISCHE E-MAIL</span>
+            <strong>
+                DEINE.STUDENTISCHE.MAIL@BEISPIEL.DE
+            </strong>
+        </div>
+
+        <div class="info-box">
+            <span>TELEFON</span>
+            <strong>
+                +49 123 4567890
+            </strong>
+        </div>
+
+        <div class="info-box">
+            <span>ADRESSE</span>
+            <strong>
+                DEINE STRASSE 1, 00000 ORT
+            </strong>
+        </div>
+
+    </section>
+
+
+    <!-- AKTIONEN -->
+    <section class="actions">
+
+        <button
+            class="primary-button"
+            onclick="saveContact()"
+        >
+            + Kontakt speichern
+        </button>
+
+        <button
+            class="secondary-button"
+            onclick="shareProfile()"
+        >
+            Profil teilen
+        </button>
+
+    </section>
+
+
+    <!-- QUALIFIKATIONEN / SOCIAL MEDIA -->
+    <section class="lower-grid">
+
+        <div class="panel">
+
+            <div class="section-title">
+                QUALIFIKATIONEN
+            </div>
+
+            <div class="qualification">
+                DEINE QUALIFIKATION
+            </div>
+
+            <div class="qualification">
+                DEIN STUDIUM / ABSCHLUSS
+            </div>
+
+            <div class="qualification">
+                WEITERE QUALIFIKATION
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="section-title">
+                SOCIAL MEDIA
+            </div>
+
+            <div class="socials">
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram ↗
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
+
+                <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub ↗
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QR / PROFIL TEILEN -->
+    <section class="share-box">
+
+        <div class="share-text">
+
+            <div class="section-title">
+                PROFIL TEILEN
+            </div>
+
+            <h2>
+                Scannen & öffnen.
+            </h2>
+
+            <p>
+                QR-Code scannen und meine digitale
+                Visitenkarte direkt öffnen.
+            </p>
+
+        </div>
+
+        <div
+            id="qrcode"
+            aria-label="QR-Code zum Speichern des Kontakts"
+        ></div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        Made with ❤️ by
+        <strong>Simon Fischer</strong>
+    </footer>
+
 </div>
 
-<div id="qrModal" class="modal">
-<div class="modal-content">
-<button class="close" onclick="closeQR()">×</button>
-<h2>Profil teilen</h2>
-<div id="qrLarge"></div>
-<p>QR-Code scannen, um meine digitale Visitenkarte zu öffnen.</p>
+
+<!-- QR MODAL -->
+<div
+    id="qrModal"
+    class="modal"
+    aria-hidden="true"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="close"
+            onclick="closeQR()"
+            aria-label="QR-Code schließen"
+        >
+            ×
+        </button>
+
+        <h2>
+            Profil teilen
+        </h2>
+
+        <div id="qrLarge"></div>
+
+        <p>
+            QR-Code scannen, um meine digitale
+            Visitenkarte zu öffnen.
+        </p>
+
+    </div>
+
 </div>
-</div>
+
 
 <script src="script.js"></script>
+
 </body>
 </html>
