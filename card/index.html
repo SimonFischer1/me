@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#071012">
+<meta name="description" content="Digitale Visitenkarte von Simon Fischer">
+<title>Simon Fischer · Digitale Visitenkarte</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+  <header class="profile-header">
+    <div class="avatar-wrap">
+      <!-- Eigenes Passbild hier einsetzen: card/profile.jpg -->
+      <img src="profile.jpg" alt="Simon Fischer" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+      <div class="avatar-fallback">SF</div>
+    </div>
+    <div>
+      <div class="eyebrow"><span></span> DIGITAL BUSINESS CARD</div>
+      <h1>Simon Fischer</h1>
+      <p class="role">Student · Digital Projects · Web</p>
+    </div>
+    <button class="qr-open" id="openQr" type="button">QR</button>
+  </header>
+
+  <main>
+    <section class="contact-grid">
+      <div class="info">
+        <span>PRIVATE E-MAIL</span>
+        <a id="privateMail"></a>
+      </div>
+      <div class="info">
+        <span>STUDENTISCHE E-MAIL</span>
+        <a id="studentMail"></a>
+      </div>
+      <div class="info">
+        <span>TELEFON</span>
+        <a id="phone"></a>
+      </div>
+      <div class="info">
+        <span>ADRESSE</span>
+        <div id="address"></div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button class="primary" id="saveContact">＋ Kontakt speichern</button>
+      <button class="secondary" id="shareProfile">Profil teilen</button>
+    </section>
+
+    <div class="two-col">
+      <section class="panel">
+        <div class="section-label">QUALIFIKATIONEN</div>
+        <div id="qualifications" class="list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-label">SOCIAL MEDIA</div>
+        <div id="socials" class="socials"></div>
+      </section>
+    </div>
+
+    <section class="panel share-panel">
+      <div>
+        <div class="section-label">PROFIL TEILEN</div>
+        <h2>Scannen & öffnen.</h2>
+        <p>QR-Code scannen und mein Profil direkt auf iPhone, iPad oder Mac öffnen.</p>
+      </div>
+      <button class="qr-card" id="openQr2" type="button" aria-label="QR-Code öffnen">
+        <div id="qrPreview"></div>
+        <span>QR</span>
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <div>Made with <b>♥</b> by <strong>Simon Fischer</strong> · © 2026</div>
+  </footer>
+</div>
+
+<div class="modal" id="qrModal" aria-hidden="true">
+  <div class="modal-inner">
+    <button class="close" id="closeQr" type="button">×</button>
+    <div class="section-label">DIGITAL BUSINESS CARD</div>
+    <h2>QR-Code</h2>
+    <div class="qr-large" id="qrLarge"></div>
+    <p>Mit der Kamera scannen und das Profil öffnen.</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
