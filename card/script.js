@@ -11,25 +11,25 @@ const profile = {
     firstName: "Simon",
     lastName: "Fischer",
 
-    email: "DEINE.PRIVATE.MAIL@BEISPIEL.DE",
+    email: "*****@****.**",
 
     studentEmail:
-        "DEINE.STUDENTISCHE.MAIL@BEISPIEL.DE",
+        "simon-luca.fischer@student.jade-hs.de",
 
     phone:
         "+49 123 4567890",
 
     address:
-        "DEINE STRASSE 1, 00000 ORT",
+        "26931, Elsfleth",
 
     instagram:
-        "https://www.instagram.com/",
+        "https://www.instagram.com/thesimonfischer",
 
     linkedin:
-        "https://www.linkedin.com/",
+        "https://www.linkedin.com/in/simon-luca-fischer-5b88013bb/",
 
     github:
-        "https://github.com/"
+        "https://github.com/SimonFischer1"
 };
 
 
